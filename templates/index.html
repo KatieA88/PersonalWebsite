@@ -1,18 +1,19 @@
-<!doctype html>
-<html>
-<head>
-  <title>Katies Website</title>
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-
-  <h1>Katies Website</h1>
-
-  <h2>Last 10 visits</h2>
-  <!-- {% for time in times %}
-    <p>{{ time }}</p>
-  {% endfor %} -->
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    {% for project in projects %}
+    <div class="row">
+        <div class="col-6">
+            <a href={{ project.url }} ><h4>{{ project.title }}</h4></a>
+            <p>{{ project.description }}</p>
+            <p><b>Category:&nbsp;</b>{{ project.category }}</p>
+            <p><b>Tools Used:&nbsp;</b>{{ project.tools }}</p>
+            <p><b>Date:&nbsp;</b>{{ project.date }}</p>
+        </div>
+        <div class="col-6">
+           <img class="project_image" src="{{ url_for('static', filename='images/' + project.image) }}"/>
+        </div>
+    </div>
+    {% endfor %}
+<div>
+{% endblock %}

@@ -1,3 +1,52 @@
-/* body {
-    background-color: red;
-} */
+
+/* Style the header*/
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Sundays', 'Didot', sans-serif;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: whitesmoke;
+    /* overflow: hidden; */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+    color: black;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-family: 'Sundays', 'Didot', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+  }
+  
+  /* Change the color of links on hover */
+  .nav a:hover {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .nav a.active {
+    background-color: lightblue;
+    color: white;
+  }
+
+  .container p {
+    line-height: 1;
+    font-family: 'Sundays', 'Didot', sans-serif;
+  }
+
+  .container .project_image {
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 10px;
+  }

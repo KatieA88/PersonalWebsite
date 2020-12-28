@@ -1,0 +1,13 @@
+{
+    "projects": [
+    {
+        "title": "Time Series Forecasting Bitcoin Price", 
+        "url": "https://github.com/KatieA88/BitcoinPricePredictionsARIMA",
+        "description": "description",
+        "image": "bitcoin.jpeg",
+        "category": "Forecasting",
+        "tools": "Jupyter, Python, ARIMA", 
+        "date": "December 2020"
+    }
+]
+}
